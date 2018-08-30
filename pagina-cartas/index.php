@@ -15,7 +15,14 @@
 
     <!-- Custom styles for this template -->
     <link href="css/shop-homepage.css" rel="stylesheet">
-
+    <script type="text/javascript">
+      function ver(n) {
+              document.getElementById("subseccion"+n).style.display="block"
+              }
+      function ocultar(n) {
+              document.getElementById("subseccion"+n).style.display="none"
+              }
+    </script>
   </head>
 
   <body>
@@ -43,7 +50,7 @@
     </nav>
     
     <!-- Page Content -->
-    <div class="container-fluid">
+    <div class="container">
 
       <div class="row">
         <div class="col-lg-8">
@@ -80,19 +87,39 @@
         <!-- /.row -->
         <h1 class="my-4">Cartas Disponibles en el Juego</h1>
       </div>
+
       <div class="row">
         <div class="col-lg-1">
-
           
           <div class="list-group">
-            <a href="#" class="list-group-item">clase</a>
-            <a href="#" class="list-group-item">ataque</a>
-            <a href="#" class="list-group-item">coste</a>
-            <a href="#" class="list-group-item">salud</a>
-            <a href="#" class="list-group-item">rareza</a>
-            <a href="#" class="list-group-item">expancio</a>
+            <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+              <a>Filtrar por:</a>
+                <div id="subseccion1">
+                  <a href="#" class="list-group-item">clase</a>
+                  <a href="#" class="list-group-item">ataque</a>
+                  <a href="#" class="list-group-item">coste</a>
+                  <a href="#" class="list-group-item">salud</a>
+                  <a href="#" class="list-group-item">rareza</a>
+                  <a href="#" class="list-group-item">expancio</a>
+                </div>
+            </li>
+          
           </div>
-
+          <div class="list-group">
+            <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
+              <a>Ordenar por:</a>
+                <div id="subseccion2">
+                  <a href="#" class="list-group-item">clase</a>
+                  <a href="#" class="list-group-item">ataque</a>
+                  <a href="#" class="list-group-item">coste</a>
+                  <a href="#" class="list-group-item">salud</a>
+                  <a href="#" class="list-group-item">rareza</a>
+                  <a href="#" class="list-group-item">expancio</a>
+                </div>
+            </li>
+          
+          </div>
+              
         </div>
         <!-- /.col-lg-3 -->
                   
@@ -106,8 +133,6 @@
           </div>
 
         </div>
-      
-        <!-- /.row -->
 
       </div>
     </div>
