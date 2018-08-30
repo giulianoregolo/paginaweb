@@ -11,7 +11,7 @@ $email = $_POST['email'];
 $sexo = $_POST['sexo'];
 $continente = $_POST['continente'];
 
-mysqli_set_charset($conexion, 'utf8');
+mysqli_set_charset($Coneccion, 'utf8');
 
 $ingresar = "INSERT INTO plantavszombies (Nombre, apellido,email,password,sexo,continente) VALUES ('$Nombre','$apellido','$email','$password','$sexo','$continente')";
 
