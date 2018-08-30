@@ -1,9 +1,3 @@
-<?php
-
-$Coneccion = mysqli_connect("localhost","root","","plantasvszombies");
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -104,36 +98,11 @@ $Coneccion = mysqli_connect("localhost","root","","plantasvszombies");
                   
         <div class="col-lg-11">
           <div class="base-datos">
-              <table>
-                <tr>
-                  <td>nombre</td>
-                  <td>clase</td>
-                  <td>tipo</td>
-                  <td>costo</td>
-                  <td>ataque</td>
-                  <td>salud</td>
-                  <td>descripcion</td>
-                  <td>rareza</td>
-                </tr>   
-                <?php 
-                $sql="SELECT * from cartas";
-                $result=mysqli_query($connecion,$sql);
-                while($mostrar=mysqli_fetch_array($result)){
-                ?> 
-                <tr>
-                  <td><?php echo $mostrar['nombre'] ?></td>
-                  <td><?php echo $mostrar['clase'] ?></td>
-                  <td><?php echo $mostrar['tipo'] ?></td>
-                  <td><?php echo $mostrar['costo'] ?></td>
-                  <td><?php echo $mostrar['ataque'] ?></td>
-                  <td><?php echo $mostrar['salud'] ?></td>
-                  <td><?php echo $mostrar['descripcion'] ?></td>
-                  <td><?php echo $mostrar['rareza'] ?></td>
-                </tr>
-                <?php
-                }
-                ?>
-              </table>>
+            <?php  
+                include("conxion.php");
+                $con = new conxion();
+                $con->recuperarDatos();
+            ?>
           </div>
 
         </div>
