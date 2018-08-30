@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.9
+-- version 4.8.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 30-08-2018 a las 23:10:46
--- Versión del servidor: 10.1.31-MariaDB
--- Versión de PHP: 7.2.3
+-- Host: 127.0.0.1
+-- Generation Time: Aug 30, 2018 at 11:36 PM
+-- Server version: 10.1.33-MariaDB
+-- PHP Version: 7.2.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,30 +19,30 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `plantavszombies`
+-- Database: `plantavszombies`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cartas`
+-- Table structure for table `cartas`
 --
 
 CREATE TABLE `cartas` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(30) NOT NULL,
-  `clase` varchar(20) NOT NULL,
-  `tipo` varchar(20) NOT NULL,
+  `nombre` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `clase` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `tipo` varchar(20) CHARACTER SET latin1 NOT NULL,
   `coste` int(10) NOT NULL,
   `ataque` int(10) NOT NULL,
   `salud` int(10) NOT NULL,
-  `descripcion` varchar(100) NOT NULL,
-  `rareza` varchar(20) NOT NULL,
-  `expamsion` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `descripcion` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `rareza` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `expamsion` varchar(20) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 --
--- Volcado de datos para la tabla `cartas`
+-- Dumping data for table `cartas`
 --
 
 INSERT INTO `cartas` (`id`, `nombre`, `clase`, `tipo`, `coste`, `ataque`, `salud`, `descripcion`, `rareza`, `expamsion`) VALUES
@@ -53,25 +53,25 @@ INSERT INTO `cartas` (`id`, `nombre`, `clase`, `tipo`, `coste`, `ataque`, `salud
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `plantavszombies`
+-- Table structure for table `plantavszombies`
 --
 
 CREATE TABLE `plantavszombies` (
   `id` int(255) NOT NULL,
-  `Nombre` varchar(30) NOT NULL,
-  `apellido` varchar(30) NOT NULL,
+  `Nombre` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `apellido` varchar(30) CHARACTER SET latin1 NOT NULL,
   `password` int(10) NOT NULL,
-  `emal` varchar(30) NOT NULL,
-  `sexo` varchar(20) NOT NULL,
-  `continente` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `emal` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `sexo` varchar(20) CHARACTER SET latin1 NOT NULL,
+  `continente` varchar(30) CHARACTER SET latin1 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=ucs2 COLLATE=ucs2_spanish_ci;
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `cartas`
+-- Indexes for table `cartas`
 --
 ALTER TABLE `cartas`
   ADD PRIMARY KEY (`id`);
