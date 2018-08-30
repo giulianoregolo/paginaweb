@@ -13,7 +13,7 @@ $continente = $_POST['continente'];
 
 mysqli_set_charset($conexion, 'utf8');
 
-$ingresar = "INSERT INTO usuarios (Nombre, apellido,email,password,sexo,continente) VALUES ('$Nombre','$apellido','$email','$password','$sexo','$continente')";
+$ingresar = "INSERT INTO plantavszombies (Nombre, apellido,email,password,sexo,continente) VALUES ('$Nombre','$apellido','$email','$password','$sexo','$continente')";
 
 $query = mysqli_query($Coneccion,$ingresar);
 

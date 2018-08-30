@@ -6,12 +6,12 @@
             $pw = "";
             $db = "plantavszombies";
 
-            $con = mnysql_connect($host,$user,$pw) or die ("No se pudo conectar a la base de datos");
-            mysql_select_db($db,$con) or die("No se encontro la base de datos");
+            $con = mysqli_connect($host,$user,$pw) or die ("No se pudo conectar a la base de datos");
+            mysqli_select_db($db,$con) or die("No se encontro la base de datos");
             $query = "SELECT * FROM cartas";
-            $resultado = mysql_query($query);
+            $resultado = mysqli_query($query);
 
-            while($fila = mysql_fetch_array($resultado)){
+            while($fila = mysqli_fetch_array($resultado)){
                 echo"$fila [id] <br>";
                 echo"$fila [nombre] <br>";
                 echo"$fila [clase] <br>";
