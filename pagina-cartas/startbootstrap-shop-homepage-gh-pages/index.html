@@ -1,10 +1,12 @@
+<?php
+
+$Coneccion = mysqli_connect("localhost","root","","plantasvszombies");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-  <?php
 
-  $Coneccion = mysqli_connect("localhost","root","","cartas");
-
-  ?>
   <head>
 
     <meta charset="utf-8">
@@ -79,7 +81,7 @@
               </a>
              </div>
            </div>
-          <!-- /.col-lg-9 -->
+          
         </div>
         <!-- /.row -->
         <h1 class="my-4">Cartas Disponibles en el Juego</h1>
@@ -99,10 +101,42 @@
 
         </div>
         <!-- /.col-lg-3 -->
+                  
+        <div class="col-lg-11">
+          <div class="base-datos">
+              <table>
+                <tr>
+                  <td>nombre</td>
+                  <td>clase</td>
+                  <td>tipo</td>
+                  <td>costo</td>
+                  <td>ataque</td>
+                  <td>salud</td>
+                  <td>descripcion</td>
+                  <td>rareza</td>
+                </tr>   
+                <?php 
+                $sql="SELECT * from cartas";
+                $result=mysqli_query($connecion,$sql);
+                while($mostrar=mysqli_fetch_array($result)){
+                ?> 
+                <tr>
+                  <td><?php echo $mostrar['nombre'] ?></td>
+                  <td><?php echo $mostrar['clase'] ?></td>
+                  <td><?php echo $mostrar['tipo'] ?></td>
+                  <td><?php echo $mostrar['costo'] ?></td>
+                  <td><?php echo $mostrar['ataque'] ?></td>
+                  <td><?php echo $mostrar['salud'] ?></td>
+                  <td><?php echo $mostrar['descripcion'] ?></td>
+                  <td><?php echo $mostrar['rareza'] ?></td>
+                </tr>
+                <?php
+                }
+                ?>
+              </table>>
+          </div>
 
-
-        
-
+        </div>
       </div>
       <!-- /.row -->
 
