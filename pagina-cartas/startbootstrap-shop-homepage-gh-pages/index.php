@@ -43,10 +43,10 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid">
 
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-8">
 
           <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -56,13 +56,13 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="carousel-item active">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
+                <img class="d-block img-fluid" src="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/06/play-pvzheroes-pvzheroes-homepage-hero1.jpg.adapt.crop16x9.1920w.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
+                <img class="d-block img-fluid" src="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/06/play-pvzheroes-pvzheroes-homepage-hero1.jpg.adapt.crop16x9.1920w.jpg" alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
+                <img class="d-block img-fluid" src="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/06/play-pvzheroes-pvzheroes-homepage-hero1.jpg.adapt.crop16x9.1920w.jpg" alt="Third slide">
               </div>
             </div>
               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -80,35 +80,36 @@
         <!-- /.row -->
         <h1 class="my-4">Cartas Disponibles en el Juego</h1>
       </div>
-      
+      <div class="row">
         <div class="col-lg-1">
 
           
           <div class="list-group">
-            <a href="#" class="list-group-item">filtro 1</a>
-            <a href="#" class="list-group-item">filtro 2</a>
-            <a href="#" class="list-group-item">filtro 3</a>
-            <a href="#" class="list-group-item">filtro 4</a>
-            <a href="#" class="list-group-item">filtro 5</a>
-            <a href="#" class="list-group-item">filtro 6</a>
+            <a href="#" class="list-group-item">clase</a>
+            <a href="#" class="list-group-item">ataque</a>
+            <a href="#" class="list-group-item">coste</a>
+            <a href="#" class="list-group-item">salud</a>
+            <a href="#" class="list-group-item">rareza</a>
+            <a href="#" class="list-group-item">expancio</a>
           </div>
 
         </div>
         <!-- /.col-lg-3 -->
                   
-        <div class="col-lg-11">
+        <div class="col-lg-10">
           <div class="base-datos">
             <?php  
                 include("conxion.php");
-                $con = new conxion();
+                $con = new conxion;
                 $con->recuperarDatos();
             ?>
           </div>
 
         </div>
-      </div>
-      <!-- /.row -->
+      
+        <!-- /.row -->
 
+      </div>
     </div>
     <!-- /.container -->
 
