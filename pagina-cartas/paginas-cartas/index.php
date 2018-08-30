@@ -30,12 +30,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="http://localhost/paginaInicioRegoloEspindola/">Inicio
+              <a class="nav-link" href="http://localhost/paginaweb/paginaInicioRegoloEspindola/">Inicio
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="http://localhost/formulariog/">Registro</a>
+              <a class="nav-link" href="http://localhost/paginaweb/formulariog/">Registro</a>
             </li>
           </ul>
         </div>
