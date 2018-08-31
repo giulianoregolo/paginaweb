@@ -9,6 +9,8 @@
     <meta name="author" content="">
 
     <title>Plantas Vs Zombies Heores</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +32,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Plantas VS Zombies Heores Stats</a>
+        <a class="navbar-brand" href="#">Plantas VS Zombies Heroes Stats</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -91,7 +93,7 @@
       <div class="row">
         <div class="col-lg-1">
           
-          <div class="list-group">
+          <div class="menu">
             <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
               <a>Filtrar por:</a>
                 <div id="subseccion1">
@@ -105,7 +107,7 @@
             </li>
           
           </div>
-          <div class="list-group">
+          <div class="menu">
             <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
               <a>Ordenar por:</a>
                 <div id="subseccion2">
@@ -130,6 +132,90 @@
                 $con = new conxion;
                 $con->recuperarDatos();
             ?>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
+            nacho </br>
           </div>
 
         </div>
@@ -137,7 +223,7 @@
       </div>
     </div>
     <!-- /.container -->
-
+  
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
