@@ -55,6 +55,8 @@
     <div class="container">
 
       <div class="row">
+        <div class="col-lg-2">
+        </div>
         <div class="col-lg-8">
 
           <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
@@ -91,40 +93,40 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-1">
-          
+        <div class="col-lg-6">
           <div class="menu">
-            <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+            <li id="seccion1" onload="ocultar(1)" onmouseover="ver(1)" onmouseout="ocultar(1)">
               <a>Filtrar por:</a>
-                <div id="subseccion1">
-                  <a href="#" class="list-group-item">clase</a>
-                  <a href="#" class="list-group-item">ataque</a>
-                  <a href="#" class="list-group-item">coste</a>
-                  <a href="#" class="list-group-item">salud</a>
-                  <a href="#" class="list-group-item">rareza</a>
-                  <a href="#" class="list-group-item">expancio</a>
-                </div>
+              <div id="subseccion1">
+                <a href="#" class="list-group-item">clase</a>
+                <a href="#" class="list-group-item">ataque</a>
+                <a href="#" class="list-group-item">coste</a>
+                <a href="#" class="list-group-item">salud</a>
+                <a href="#" class="list-group-item">rareza</a>
+                <a href="#" class="list-group-item">expancio</a>
+              </div>
             </li>
-          
           </div>
-          <div class="menu">
-            <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
-              <a>Ordenar por:</a>
-                <div id="subseccion2">
-                  <a href="#" class="list-group-item">clase</a>
-                  <a href="#" class="list-group-item">ataque</a>
-                  <a href="#" class="list-group-item">coste</a>
-                  <a href="#" class="list-group-item">salud</a>
-                  <a href="#" class="list-group-item">rareza</a>
-                  <a href="#" class="list-group-item">expancio</a>
-                </div>
-            </li>
-          
-          </div>
-              
         </div>
-        <!-- /.col-lg-3 -->
-                  
+        <div class="col-lg-6">
+          <div class="menu">
+            <li id="seccion2" onload="ocultar(2)" onmouseover="ver(2)" onmouseout="ocultar(2)">
+              <a>Ordenar por:</a>
+              <div id="subseccion2">
+                <a href="#" class="list-group-item">clase</a>
+                <a href="#" class="list-group-item">ataque</a>
+                <a href="#" class="list-group-item">coste</a>
+                <a href="#" class="list-group-item">salud</a>
+                <a href="#" class="list-group-item">rareza</a>
+                <a href="#" class="list-group-item">expancio</a>
+              </div>
+            </li>
+          </div>   
+        </div>
+      </div>
+      <div class=row>
+        <div class="col-lg-1">
+        </div>
         <div class="col-lg-10">
           <div class="base-datos">
             <?php  
@@ -212,10 +214,7 @@
             nacho </br>
             nacho </br>
             nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
+            nacho </br> nacho </br> nacho </br> nacho </br>
           </div>
 
         </div>

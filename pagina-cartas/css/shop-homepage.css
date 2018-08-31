@@ -2,7 +2,10 @@
 
 body {
   padding-top: 54px;
-  background-color: darkgreen;
+  background-image: url('https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/06/play-pvzheroes-pvzheroes-homepage-heroesbg.jpg.adapt.1920w.jpg%27');
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
 }
 
 @media (min-width: 992px) {
@@ -12,7 +15,7 @@ body {
 }
 .base-datos{
   font-size:20px;
-  color: yellow;
+  color:black;
   word-spacing:5px;
   text-align:center;
 
@@ -23,19 +26,23 @@ body {
   border-width:medium;
 
   border-left-style:double;   
-border-right-style:double  ; 
-border-top-style:double   ;
-border-bottom-style:double ;  
-border-style:double;
-
+  border-right-style:double  ; 
+  border-top-style:double   ;
+  border-bottom-style:double ;  
+  border-style:double;
 }
 
 .menu-fixed {
-	position:fixed;
-	z-index:1000;
-	top:100;
-	/*max-width:1000px;*/
-	left:0;
-	width:100%;
-	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+  position:fixed;
+  z-index:1000;
+  width:40%;
+  padding-left: 10%;
+  
 }
+
+.menu{
+	z-index:1000;
+  width:40%;
+  padding-left: 10%;
+}
+
