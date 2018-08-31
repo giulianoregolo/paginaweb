@@ -33,9 +33,18 @@ border-style:double;
 .menu-fixed {
 	position:fixed;
 	z-index:1000;
-	top:100;
-	/*max-width:1000px;*/
-	left:0;
-	width:100%;
-	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+	max-width:1000px;
+  width:40%;
+  padding-left: 10%;
+  padding-top: 1%;
+  text-align:center;
+}
+
+.menu{
+	z-index:1000;
+	max-width:1000px;
+  width:40%;
+  padding-left: 10%;
+  padding-top: 1%;
+  text-align:center;
 }
