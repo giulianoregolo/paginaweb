@@ -42,7 +42,25 @@ body {
 
 .menu{
 	z-index:1000;
+<<<<<<< HEAD
   width:40%;
   padding-left: 10%;
 }
 
+=======
+	max-width:1000px;
+  width:40%;
+  padding-left: 10%;
+  padding-top: 1%;
+  text-align:center;
+}
+
+.menu{
+	z-index:1000;
+	max-width:1000px;
+  width:40%;
+  padding-left: 10%;
+  padding-top: 1%;
+  text-align:center;
+}
+>>>>>>> aa8e0d5b8d00663cca8166d707263c4627dbaff1
