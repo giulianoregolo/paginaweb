@@ -91,7 +91,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-1">
+        <div class="col-lg-6">
           
           <div class="menu">
             <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
@@ -107,25 +107,26 @@
             </li>
           
           </div>
-          <div class="menu">
-            <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
-              <a>Ordenar por:</a>
-                <div id="subseccion2">
-                  <a href="#" class="list-group-item">clase</a>
-                  <a href="#" class="list-group-item">ataque</a>
-                  <a href="#" class="list-group-item">coste</a>
-                  <a href="#" class="list-group-item">salud</a>
-                  <a href="#" class="list-group-item">rareza</a>
-                  <a href="#" class="list-group-item">expancio</a>
-                </div>
-            </li>
-          
-          </div>
-              
+          <div class="col-lg-6">  
+            <div class="menu">
+              <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
+                  <a>Ordenar por:</a>
+                  <div id="subseccion2">
+                    <a href="#" class="list-group-item">clase</a>
+                    <a href="#" class="list-group-item">ataque</a>
+                    <a href="#" class="list-group-item">coste</a>
+                    <a href="#" class="list-group-item">salud</a>
+                    <a href="#" class="list-group-item">rareza</a>
+                    <a href="#" class="list-group-item">expancio</a>
+                  </div>
+              </li>            
+            </div>
+          </div>      
         </div>
         <!-- /.col-lg-3 -->
-                  
-        <div class="col-lg-10">
+      </div>     
+      <div class="row">
+        <div class="col-lg-12">
           <div class="base-datos">
             <?php  
                 include("conxion.php");
