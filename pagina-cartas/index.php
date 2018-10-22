@@ -55,55 +55,23 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-8">
-
-          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="carousel-item active">
-                <img class="d-block img-fluid" src="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/06/play-pvzheroes-pvzheroes-homepage-hero1.jpg.adapt.crop16x9.1920w.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/06/play-pvzheroes-pvzheroes-homepage-hero1.jpg.adapt.crop16x9.1920w.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block img-fluid" src="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/06/play-pvzheroes-pvzheroes-homepage-hero1.jpg.adapt.crop16x9.1920w.jpg" alt="Third slide">
-              </div>
-            </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-             </div>
-           </div>
-          
-        </div>
-        <!-- /.row -->
-        <h1 class="my-4">Cartas Disponibles en el Juego</h1>
+        <div class="col-lg-12">
+          <h1 class="my-4">Cartas Disponibles en el Juego</h1>
+        </div>      
       </div>
 
       <div class="row">
         <div class="col-lg-6">
           <div class="menu">
             <li id="seccion1" onload="ocultar(1)" onmouseover="ver(1)" onmouseout="ocultar(1)">
-              <a>Filtrar por:</a>
+              <a   class="nav-item">Filtrar por:</a>
               <div id="subseccion1">
-                <a href="#" class="list-group-item">clase</a>
-                <a href="#" class="list-group-item">ataque</a>
-                <a href="#" class="list-group-item">coste</a>
-                <a href="#" class="list-group-item">salud</a>
-                <a href="#" class="list-group-item">rareza</a>
-                <a href="#" class="list-group-item">expancio</a>
+                <a class ="desplegables">clase</br></a>
+                <a class ="desplegables">ataque</br></a>
+                <a class ="desplegables">coste</br></a>
+                <a class ="desplegables">salud</br></a>
+                <a class ="desplegables">rareza</br></a>
+                <a class ="desplegables">expancio</br></a>
               </div>
             </li>
           </div>
@@ -113,21 +81,19 @@
             <li id="seccion2" onload="ocultar(2)" onmouseover="ver(2)" onmouseout="ocultar(2)">
               <a>Ordenar por:</a>
               <div id="subseccion2">
-                <a href="#" class="list-group-item">clase</a>
-                <a href="#" class="list-group-item">ataque</a>
-                <a href="#" class="list-group-item">coste</a>
-                <a href="#" class="list-group-item">salud</a>
-                <a href="#" class="list-group-item">rareza</a>
-                <a href="#" class="list-group-item">expancio</a>
+                <a class ="desplegables">clase</br></a>
+                <a class ="desplegables">ataque</br></a>
+                <a class ="desplegables">coste</br></a>
+                <a class ="desplegables">salud</br></a>
+                <a class ="desplegables">rareza</br></a>
+                <a class ="desplegables">expancio</br></a>
               </div>
             </li>
           </div>   
         </div>
       </div>
       <div class=row>
-        <div class="col-lg-1">
-        </div>
-        <div class="col-lg-10">
+        <div class="col-lg-12">
           <div class="base-datos">
             <?php  
                 include("conxion.php");
@@ -151,70 +117,12 @@
             nacho </br>
             nacho </br>
             nacho </br>
+            nacho </br>            nacho </br>
             nacho </br>
             nacho </br>
             nacho </br>
             nacho </br>
             nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br> nacho </br> nacho </br> nacho </br>
           </div>
 
         </div>
@@ -233,8 +141,7 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>      
   </body>
 
 </html>
