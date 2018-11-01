@@ -112,12 +112,14 @@
               <li id="seccion2" onmouseover="ver(2)" onmouseout="ocultar(2)">
                   <a>Ordenar por:</a>
                   <div id="subseccion2">
-                    <a href="#" class="list-group-item">clase</a>
-                    <a href="#" class="list-group-item">ataque</a>
-                    <a href="#" class="list-group-item">coste</a>
-                    <a href="#" class="list-group-item">salud</a>
-                    <a href="#" class="list-group-item">rareza</a>
-                    <a href="#" class="list-group-item">expancio</a>
+                    <form action="">
+                      <a href="#" class="list-group-item">clase</a>
+                      <a href="#" class="list-group-item">ataque</a>
+                      <a href="#" class="list-group-item">coste</a>
+                      <a href="#" class="list-group-item">salud</a>
+                      <a href="#" class="list-group-item">rareza</a>
+                      <a href="#" class="list-group-item">expancio</a>
+                    </form>
                   </div>
               </li>            
             </div>
@@ -132,91 +134,9 @@
                 include("conxion.php");
                 $con = new conxion;
                 $con->recuperarDatos();
+               // include("cerrar_conexion.php");
             ?>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
-            nacho </br>
+
           </div>
 
         </div>
@@ -236,7 +156,22 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <!-- script para consultas -->
+    <script type="text/javascript"> 
+      $document().ready(function(){
+        $('').click()function(){
+            $.ajax({
+              type:
+              url:
+              data:
+              success:function(){
+                
+              }
+            })
+        }
+      })
+    
+    </script> 
   </body>
 
 </html>

@@ -11,17 +11,34 @@
             $query = "SELECT * FROM cartas";
             $resultado = mysqli_query($con,$query);
 
-           while($obtener_filas=mysqli_fetch_array($resultado)){
-                echo 'nombre: ',$nombre=$obtener_filas['nombre'],'|' ;
-                echo 'clase: ',$clase=$obtener_filas['clase'], '|';
-                echo 'tipo: ',$tipo=$obtener_filas['tipo'], '|';
-                echo 'coste: ',$coste=$obtener_filas['coste'], '|';
-                echo 'ataque: ',$ataque=$obtener_filas['ataque'], '|';
-                echo 'salud: ',$salud=$obtener_filas['salud'], '|';
-                echo 'descripcion: ',$descripcion=$obtener_filas['descripcion'], '|';
-                echo 'rareza: ',$rareza=$obtener_filas['rareza'], '|';
-                echo 'expansion: ',$expansion=$obtener_filas['expamsion'], '|';
-		        echo '<br>';
+           while($ObtenerFila=mysqli_fetch_array($resultado)){
+            echo 
+            "
+              <table width=\"100%\" border=\"1\">
+                <tr>
+                  <td><b><center>Nombre</center></b></td>
+                  <td><b><center>Clase</center></b></td>
+                  <td><b><center>Tipo</center></b></td>
+                  <td><b><center>Coste</center></b></td>
+                  <td><b><center>Ataque</center></b></td>
+                  <td><b><center>Salud</center></b></td>
+                  <td><b><center>Descrip</center></b></td>
+                  <td><b><center>Rareza</center></b></td>
+                  <td><b><center>Expansion</center></b></td>
+                </tr>
+                <tr>
+                  <td>".$ObtenerFila['nombre']."</td>
+                  <td>".$ObtenerFila['clase']."</td>
+                  <td>".$ObtenerFila['tipo']."</td>
+                  <td>".$ObtenerFila['coste']."</td>
+                  <td>".$ObtenerFila['ataque']."</td>
+                  <td>".$ObtenerFila['salud']."</td>
+                  <td>".$ObtenerFila['descripcion']."</td>
+                  <td>".$ObtenerFila['rareza']."</td>
+                  <td>".$ObtenerFila['expamsion']."</td>
+                </tr>
+              </table>
+            ";
             }
         }
     }
