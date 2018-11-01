@@ -97,7 +97,7 @@
             <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
               <a>Filtrar por:</a>
                 <div id="subseccion1">
-                  <form action="filtros.php" method="POST">
+                  <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
                     <input type= "submit" value="clase" class="list-group-item" id="filtro1">
                     <input type= "submit" value="ataque" class="list-group-item" id="filtro2">
                     <a href="#" class="list-group-item">coste</a>
