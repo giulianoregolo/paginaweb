@@ -97,12 +97,14 @@
             <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
               <a>Filtrar por:</a>
                 <div id="subseccion1">
-                  <a href="#" class="list-group-item">clase</a>
-                  <a href="#" class="list-group-item">ataque</a>
-                  <a href="#" class="list-group-item">coste</a>
-                  <a href="#" class="list-group-item">salud</a>
-                  <a href="#" class="list-group-item">rareza</a>
-                  <a href="#" class="list-group-item">expancio</a>
+                  <form action="filtros.php" method="POST">
+                    <input type= "submit" value="clase" class="list-group-item" id="filtro1">
+                    <input type= "submit" value="ataque" class="list-group-item" id="filtro2">
+                    <a href="#" class="list-group-item">coste</a>
+                    <a href="#" class="list-group-item">salud</a>
+                    <a href="#" class="list-group-item">rareza</a>
+                    <a href="#" class="list-group-item">expancio</a>
+                  </form>  
                 </div>
             </li>
           
@@ -113,7 +115,7 @@
                   <a>Ordenar por:</a>
                   <div id="subseccion2">
                     <form action="">
-                      <a href="#" class="list-group-item">clase</a>
+                      <a href="#" class="list-group-item" id="orden1">clase</a>
                       <a href="#" class="list-group-item">ataque</a>
                       <a href="#" class="list-group-item">coste</a>
                       <a href="#" class="list-group-item">salud</a>
@@ -130,11 +132,50 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="base-datos">
-            <?php  
-                include("conxion.php");
-                $con = new conxion;
-                $con->recuperarDatos();
-               // include("cerrar_conexion.php");
+            <?php 
+              include("conxion.php");
+              $con = new conxion;
+              $con->recuperarDatos();
+              // include("cerrar_conexion.php");
+              if(isset($_POST['filtro1'])){
+                //include("conxion.php");
+                  $filtro1=mysqli_query($con,"SELECT * FROM $db WHERE clase = gigante");
+                  while($Fila=mysqli_fetch_array($filtro1)){
+                   echo
+                    "<table width= \"100% \" border=\"1\">
+                        <tr>
+                          <td><b><center>Nombre</center></b></td>
+                          <td><b><center>Clase</center></b></td>
+                          <td><b><center>Tipo</center></b></td>
+                          <td><b><center>Coste</center></b></td>
+                          <td><b><center>Ataque</center></b></td>
+                          <td><b><center>Salud</center></b></td>
+                          <td><b><center>Descrip</center></b></td>
+                          <td><b><center>Rareza</center></b></td>
+                          <td><b><center>Expansion</center></b></td>
+                        </tr>
+                        <tr>
+                          <td>".$Fila['nombre']."</td>
+                          <td>".$Fila['clase']."</td>
+                          <td>".$Fila['tipo']."</td>
+                          <td>".$Fila['coste']."</td>
+                          <td>".$Fila['ataque']."</td>
+                          <td>".$Fila['salud']."</td>
+                          <td>".$Fila['descripcion']."</td>
+                          <td>".$Fila['rareza']."</td>
+                          <td>".$Fila['expamsion']."</td>
+                        </tr>
+                      </table>
+                    ";
+                  }
+                  
+              }
+              if(isset($_POST['filtro2'])){
+                //include("conxion.php");
+                mysqli_query($con,"SELECT * FROM $db WHERE ataque = 4");
+              }
+                
+               
             ?>
 
           </div>
