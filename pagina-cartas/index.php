@@ -97,14 +97,14 @@
             <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
               <a>Filtrar por:</a>
                 <div id="subseccion1">
-                  <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
-                    <input type= "submit" value="clase" class="list-group-item" id="filtro1">
-                    <input type= "submit" value="ataque" class="list-group-item" id="filtro2">
+                  <form>
+                    <input type= "button" value="clase" class="list-group-item" id="filtro1" onclick= "ejecutar() " >
+                  </form> 
                     <a href="#" class="list-group-item">coste</a>
                     <a href="#" class="list-group-item">salud</a>
                     <a href="#" class="list-group-item">rareza</a>
                     <a href="#" class="list-group-item">expancio</a>
-                  </form>  
+                   
                 </div>
             </li>
           
@@ -132,50 +132,11 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="base-datos">
-            <?php 
+          <?php 
               include("conxion.php");
               $con = new conxion;
-              $con->recuperarDatos();
-              // include("cerrar_conexion.php");
-              if(isset($_POST['filtro1'])){
-                //include("conxion.php");
-                  $filtro1=mysqli_query($con,"SELECT * FROM $db WHERE clase = gigante");
-                  while($Fila=mysqli_fetch_array($filtro1)){
-                   echo
-                    "<table width= \"100% \" border=\"1\">
-                        <tr>
-                          <td><b><center>Nombre</center></b></td>
-                          <td><b><center>Clase</center></b></td>
-                          <td><b><center>Tipo</center></b></td>
-                          <td><b><center>Coste</center></b></td>
-                          <td><b><center>Ataque</center></b></td>
-                          <td><b><center>Salud</center></b></td>
-                          <td><b><center>Descrip</center></b></td>
-                          <td><b><center>Rareza</center></b></td>
-                          <td><b><center>Expansion</center></b></td>
-                        </tr>
-                        <tr>
-                          <td>".$Fila['nombre']."</td>
-                          <td>".$Fila['clase']."</td>
-                          <td>".$Fila['tipo']."</td>
-                          <td>".$Fila['coste']."</td>
-                          <td>".$Fila['ataque']."</td>
-                          <td>".$Fila['salud']."</td>
-                          <td>".$Fila['descripcion']."</td>
-                          <td>".$Fila['rareza']."</td>
-                          <td>".$Fila['expamsion']."</td>
-                        </tr>
-                      </table>
-                    ";
-                  }
-                  
-              }
-              if(isset($_POST['filtro2'])){
-                //include("conxion.php");
-                mysqli_query($con,"SELECT * FROM $db WHERE ataque = 4");
-              }
-                
-               
+              //$con->recuperarDatos();
+              //include("cerrar_conexion.php")
             ?>
 
           </div>
@@ -199,18 +160,15 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- script para consultas -->
     <script type="text/javascript"> 
-      $document().ready(function(){
-        $('').click()function(){
-            $.ajax({
-              type:
-              url:
-              data:
-              success:function(){
-                
-              }
-            })
+      function ejecutar(){
+      alert("pulsado");
+      }
+      function flitro1(){
+
+        var tabla = <?=recuperarDatos()?>
+        document.writeln(tabla);
+        alert("Hello! I am an alert box!!");
         }
-      })
     
     </script> 
   </body>
